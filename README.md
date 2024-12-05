@@ -16,7 +16,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
 - Python
-- Mysql
+- Mysql Workbench
 - Git e Github
 
 
