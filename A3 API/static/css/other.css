@@ -1,0 +1,175 @@
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color:rgba(226, 215, 215, 0.623);
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.col-md-3, .col-md-2 {
+    flex: 1;
+    max-width: 300px;
+}
+
+.col-md-3 img, .col-md-2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+p {
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Css do Formulario */
+.output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  .output h3 {
+    margin-top: 0;
+  }
+  .pedido-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .pedido-item button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+/* Estilo da menssagem do sorteio  */
+.mensagem {
+    background: linear-gradient(to right, #ff7f50, #ff6347); /* Cor de fundo degradê */
+    color: #fff;
+    padding: 30px 40px; /* Aumentando o padding para mais espaço */
+    margin: 30px 0;
+    border: 3px solid #ff4500; /* Borda chamativa */
+    border-radius: 15px; /* Bordas arredondadas mais suaves */
+    text-align: center;
+    font-size: 24px; /* Texto maior para dar mais destaque */
+    font-weight: bold;
+    text-transform: uppercase; /* Transformando para maiúsculas para destacar */
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombras mais suaves e evidentes */
+    transition: all 0.3s ease-in-out; /* Transição suave */
+    width: 90%; /* Aumenta o tamanho da caixa */
+    max-width: 800px; /* Tamanho máximo para não ficar muito grande */
+    margin: 30px auto; /* Centraliza a caixa */
+    transform: translateY(10px); /* Ajusta a posição verticalmente */
+}
+
+/* Efeito de hover */
+.mensagem:hover {
+    background: linear-gradient(to right, #ff6347, #ff7f50); /* Troca de gradiente no hover */
+    transform: translateY(-5px); /* Levanta a caixa no hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombras mais intensas no hover */
+}
+
+/* Adicionando sombra ao texto para destaque */
+.mensagem h1 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Sombras ao texto */
+}
+
+/* Efeito de fade-in quando a página carrega */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Efeito de animação no texto */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Texto animado com bounce */
+.mensagem h1 {
+    animation: bounce 1s ease-in-out infinite; /* Animação repetida */
+}
+
+/* Classe que faz a mensagem desaparecer e desabilita a interação */
+.esconder {
+    display: none !important;
+}
+
+/* Previne que o clique seja reativo após o desaparecimento */
+.disabled {
+    pointer-events: none;
+}
+
+/* Estilo geral para botões */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #949494; /* Azul padrão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Botão no estado hover */
+button:hover {
+    background-color: #353535; /* Azul mais escuro */
+    transform: scale(1.05);
+}
+
+/* Botão no estado ativo (quando clicado) */
+button:active {
+    background-color: #2e2e2e; /* Azul ainda mais escuro */
+    transform: scale(0.98);
+}
+
+/* Botões de ação (exemplo: deletar) */
+button.deletar {
+    background-color: #b6611b; /* Vermelho */
+}
+
+button.deletar:hover {
+    background-color: #754d02; /* Vermelho mais escuro */
+}
+
+button.deletar:active {
+    background-color: #841122; /* Vermelho ainda mais escuro */
+}
+
+
